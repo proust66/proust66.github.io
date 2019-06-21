@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Multiple format video and audio example</title>
+  </head>
+  <body>
+    <figure>
+      <figcaption>
+        <h2>Below is a video of my keybaoed that will play in all modern browsers.</h2>
+      </figcaption>
+      <video controls width="500" poster="poster-keyboard.png" preload="metadata">
+        <source src="keyboard.mp4" type="video/mp4">
+        <source src="keybaord.webm" type="video/webm">
+        <track kind="subtitles" srclang="en" src="keyboard.vtt">
+        <p>Your browser doesn't support HTML5 video. Here is a <a href="keyboard.mp4">link to the video</a> instead.</p>
+      </video>
+    </figure>
+    <figure>
+      <figcaption>
+        <h2>Below is an audio player of tapping sounds that will play in all modern browsers.</h2>
+      </figcaption>
+      <audio controls>
+        <source src="tapping.mp3" type="audio/mp3">
+        <source src="tapping.ogg" type="audio/oog">
+        <p>Your browser doesn't support HTML5 audio. Here is a <a href="tapping.mp3">link to the audio</a> instead.</p>
+      </audio>
+    </figure>
+  </body>
+</html>
